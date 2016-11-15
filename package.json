@@ -1,0 +1,14 @@
+{
+  "name": "udemy_es6_project",
+  "version": "1.0.0",
+  "description": "A simple project to learn about ES6",
+  "main": "",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "Flavio Contreras",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}

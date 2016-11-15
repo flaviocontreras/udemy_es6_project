@@ -1,0 +1,49 @@
+<!doctype html>
+
+<head>
+
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <script data-require="systemjs@*" data-semver="0.18.2-dev" src="https://cdn.rawgit.com/systemjs/systemjs/master/dist/system.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container text-center text-primary">
+            <h1>My Awesome Weather App</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="input-group">
+                    <span class="input-group-addon">City Name</span>
+                    <input type="text" class="form-control" id="city">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Show Weather!</button>
+                </span>
+                </div>
+            </div>
+
+        </div>
+        <div id="load">Loading...</div>
+
+        <div id="weather">
+            <h1 id="weathercity">City Name</h1>
+
+            <div id="weatherDescription">Weather Description</div>
+            <div id="weatherTemperature">Temperature</div>
+        </div>
+    </div>
+
+    <script>
+        System.import('app.js');
+    </script>
+</body>
+
+</html>
